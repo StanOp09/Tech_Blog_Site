@@ -39,6 +39,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Define a route for the root path ('/') to render the landing page
+app.get('/', (req, res) => {
+  res.render('main', {
+    pageTitle: 'Welcome to Your App',
+    onDashboard: false, // Set this to false since we're not on the dashboard
+    loggedIn: req.session.logged_in || false, // Check if the user is logged in
+  });
+});
+
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {

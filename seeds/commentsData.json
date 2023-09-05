@@ -1,18 +1,23 @@
 [
     {
-      "content": "Great article! Thanks for sharing.",
-      "user_id": 1,
-      "blogpost_id": 1
-    },
-    {
-      "content": "I found this very helpful.",
+      "content": "Great post! I learned a lot.",
       "user_id": 2,
       "blogpost_id": 1
     },
     {
-      "content": "Looking forward to more content like this.",
+      "content": "I have a question about this topic.",
       "user_id": 3,
+      "blogpost_id": 1
+    },
+    {
+      "content": "Looking forward to more posts like this.",
+      "user_id": 1,
       "blogpost_id": 2
+    },
+    {
+      "content": "Interesting insights into machine learning.",
+      "user_id": 2,
+      "blogpost_id": 3
     }
-]
+  ]
   

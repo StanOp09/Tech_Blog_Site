@@ -1,15 +1,18 @@
 [
     {
-      "title": "Getting Started with Node.js",
-      "content": "Node.js is a runtime that..."
+      "title": "Introduction to Tech Blogging",
+      "content": "This is a sample blog post about tech blogging.",
+      "user_id": 1
     },
     {
-      "title": "Introduction to React",
-      "content": "React is a popular JavaScript..."
+      "title": "Web Development Trends",
+      "content": "Exploring the latest trends in web development.",
+      "user_id": 2
     },
     {
-      "title": "JavaScript Best Practices",
-      "content": "Learn about coding best practices..."
+      "title": "Machine Learning Advances",
+      "content": "Discussing recent advancements in machine learning.",
+      "user_id": 3
     }
-]
+  ]
   

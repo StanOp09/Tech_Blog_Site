@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{pageTitle}}</title>
+    <link rel="stylesheet" href="/css/jass.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="top_container">
+        <nav>
+            <ul><a href="/">Home</a></ul>
+            <ul><a href="/dashboard">{{#if onDashboard}}Your Dashboard{{else}}Dashboard{{/if}}</a></ul>
+            {{#if loggedIn}}
+                <ul><a href="/logout">Logout</a></ul>
+            {{else}}
+                <ul><a href="/login">Login</a></ul>
+                <ul><a href="/logout">Logout</a></ul>
+            {{/if}}
+        </nav>
+        <h1>
+            {{pageTitle}}
+        </h1>
+    </div>
+    {{{body}}} <!-- This is where the content of other pages will be inserted -->
+</body>
+</html>
+    

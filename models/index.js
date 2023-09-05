@@ -1,31 +1,31 @@
-const User = require ('./User');
+const User = require('./User');
 const BlogPost = require('./BlogPost');
-const Comments = require('./Comments');
+const Comment = require('./Comments'); // Corrected the import name
 
 User.hasMany(BlogPost, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'
 });
 
-User.hasMany(Comments, {
+User.hasMany(Comment, {
     foreignKey: 'user_id'
 })
 
-BlogPost.belongTo(User, {
-    foreignKey:'user_id'
+BlogPost.belongsTo(User, {
+    foreignKey: 'user_id'
 });
 
-BlogPost.hasMany(Comments, {
+BlogPost.hasMany(Comment, {
     foreignKey: 'blogpost_id',
     onDelete: 'CASCADE'
 });
 
-Comments.belongTo(User, {
+Comment.belongsTo(User, {
     foreignKey: 'user_id'
 })
 
-Comments.belongTo(BlogPost, {
+Comment.belongsTo(BlogPost, {
     foreignKey: 'blogpost_id'
 });
 
-module.exports = { User, BlogPost, Comments };
+module.exports = { User, BlogPost, Comment }; // Corrected the export name
